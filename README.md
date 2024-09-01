@@ -19,11 +19,10 @@ $$P(A|B)=\frac{P(B|A)}{P(B|A)P(A)+P(B|A^{\textrm{C}})P(A^{\textrm{C}})}P(A), \qu
 ## 승산 형태의 Bayes 정리  
 $A$를 $A^{\textrm{C}}$로 바꾸어 얻어지는  
 $P(A^{\textrm{C}}|B)=\frac{P(B|A^{\textrm{C}})}{P(B)}P(A^{\textrm{C}})$에서  
-$P(A^{\textrm{C}}|B)=1-P(A|B)$, $P(A^{\textrm{C}})=1-P(A)$이므로  
-$1-P(A|B)=\frac{P(B|A^{\textrm{C}})}{P(B)}(1-P(A))$  
 두 식의 비를 구하면  
-$\frac{P(A|B)}{1-P(A|B)}=\frac{P(B|A)}{P(B|A^{\textrm{C}})}\frac{P(A)}{1-P(A)}$  
-승산(odds) $O(A)\equiv \frac{P(A)}{1-P(A)}=\frac{P(A)}{P(A^{\textrm{C}})}$을 정의하면 승산 형태의 Bayes 정리   
+$\frac{P(A|B)}{P(A^{\textrm{C}}|B)}=\frac{P(B|A)}{P(B|A^{\textrm{C}})}\frac{P(A)}{P(A^{\textrm{C}})}$  
+$P(A^{\textrm{C}}|B)=1-P(A|B)$, $P(A^{\textrm{C}})=1-P(A)$이므로  
+승산(odds) $O(A)\equiv \frac{P(A)}{P(A^{\textrm{C}})}=\frac{P(A)}{1-P(A)}$을 정의하면 승산 형태의 Bayes 정리   
 $$O(A|B)=\Lambda(A|B)O(A), \quad (단, P(A)\neq 0, P(A^{\textrm{C}})\neq 0, P(B)\neq 0, P(B|A^{\textrm{C}})\neq 0)$$  
 > $\Lambda(A|B) \equiv P(B|A)/P(B|A^{\textrm{C}})$ : Bayes 인자. 유병률에 무관
  
@@ -51,5 +50,5 @@ $A$ (감염) | 16  | 4 | 20
 $A^{\textrm{C}}$ (미감염) | 49  | 931 | 980   
 소계 |  65  |  935   |  1000  
 
-$P(A|B)=\frac{P(B|A)}{P(B)}P(A)=\frac{0.8}{65/1000} 0.02=0.246$   
-$O(A|B)=\frac{P(B|A)}{P(B|A^{\textrm{C}})}O(A)=\frac{0.8}{1-0.95} \frac{0.02}{1-0.02}=\frac{16}{49}=0.3265$ 
+$P(A|B)=\frac{P(B|A)}{P(B)}P(A)=\frac{0.8}{65/1000} 0.02=\frac{16}{65}=0.246$   
+$O(A|B)=\frac{P(B|A)}{P(B|A^{\textrm{C}})}O(A)=\frac{0.8}{1-0.95} \frac{0.02}{1-0.02}=\frac{16}{49}=0.3265$
