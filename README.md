@@ -24,12 +24,12 @@ $P(A|B)=\frac{P(B|A)}{P(B|A)P(A)+P(B|A^{\textrm{C}})P(A^{\textrm{C}})}P(A), \qua
 $P(A^{\textrm{C}}|B)=\frac{P(B|A^{\textrm{C}})}{P(B)}P(A^{\textrm{C}})$와 (2)의 비를 구하면  
 $\frac{P(A|B)}{P(A^{\textrm{C}}|B)}=\frac{P(B|A)}{P(B|A^{\textrm{C}})}\frac{P(A)}{P(A^{\textrm{C}})}$  
 분모 $P(A^{\textrm{C}}|B)=1-P(A|B)$, $P(A^{\textrm{C}})=1-P(A)$이므로  
-승산(odds) $O(A)\equiv \frac{P(A)}{P(A^{\textrm{C}})}=\frac{P(A)}{1-P(A)}$을 정의하면 승산 형태의 Bayes 정리   
+승산(odds) $O(A)\equiv \frac{P(A)}{P(A^{\textrm{C}})}=\frac{P(A)}{1-P(A)}$을 정의하면 승산 형태(odds form)의 Bayes 정리   
 $O(A|B)=\Lambda(A|B)O(A), \quad (단, P(A)\neq 0, P(A^{\textrm{C}})\neq 0, P(B)\neq 0, P(B|A^{\textrm{C}})\neq 0)\quad\quad(4)$  
 를 얻는다.  여기서  
 > $\Lambda(A|B) \equiv P(B|A)/P(B|A^{\textrm{C}})$ : Bayes 인자
 
-는 유병률에 무관하다.  
+는 $P(A)$에 무관하다.  
 
 ## 확장형 Bayes 정리  
 $A$, $A^{\textrm{C}}$를 $A_1$,...,$A_n$으로 일반화하면 (단, $A_i\cap A_j\neq 0 (i\neq j)$, $A_1\cup\cdots\cup A_n=U$), 확장형 Bayes 정리  
